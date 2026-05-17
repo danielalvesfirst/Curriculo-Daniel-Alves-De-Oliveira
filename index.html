@@ -317,11 +317,12 @@
     </main>
 
     <footer>
-        <p>
-            © 2026 Daniel Alves de Oliveira.
-            Todos os direitos reservados.
-        </p>
+        <p>&copy; <span id="ano-atual"></span> Daniel Alves de Oliveira. Todos os direitos reservados.</p>
     </footer>
+
+    <script>
+    document.getElementById('ano-atual').textContent = new Date().getFullYear();
+    </script>
 
 </body>
 
