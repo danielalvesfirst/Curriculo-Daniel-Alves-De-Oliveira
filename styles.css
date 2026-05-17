@@ -1,0 +1,370 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+/* =========================
+   VARIÁVEIS
+========================= */
+
+:root {
+    --bg: #0b0f19;
+
+    --card: #111827;
+
+    --text: #f3f4f6;
+
+    --muted: #9ca3af;
+
+    --gradient:
+        linear-gradient(
+            135deg,
+            #7928ca,
+            #3b82f6,
+            #00dfd8,
+            #ff007f,
+            #7928ca
+        );
+}
+
+/* =========================
+   RESET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* =========================
+   BODY
+========================= */
+
+body {
+    background: var(--bg);
+
+    color: var(--text);
+
+    font-family: 'Inter', sans-serif;
+
+    line-height: 1.7;
+
+    padding: 40px 20px;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+header {
+    text-align: center;
+
+    margin-bottom: 40px;
+}
+
+header h1 {
+    font-size: 3rem;
+
+    margin-bottom: 10px;
+
+    background: var(--gradient);
+
+    background-size: 300% 300%;
+
+    background-clip: text;
+    -webkit-background-clip: text;
+
+    -webkit-text-fill-color: transparent;
+
+    animation: brilho 8s linear infinite;
+}
+
+.subtitulo {
+    color: var(--muted);
+
+    font-size: 1.1rem;
+}
+
+/* =========================
+   LAYOUT
+========================= */
+
+.container-curriculo {
+    max-width: 1400px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns:
+        2fr
+        1.2fr
+        0.9fr;
+
+    gap: 25px;
+}
+
+.coluna-principal,
+.coluna-lateral,
+.coluna-tres {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 25px;
+}
+
+/* =========================
+   CARDS
+========================= */
+
+section {
+    background:
+        linear-gradient(var(--card), var(--card)),
+        var(--gradient);
+
+    background-origin: border-box;
+
+    background-clip:
+        padding-box,
+        border-box;
+
+    border: 2px solid transparent;
+
+    border-radius: 22px;
+
+    padding: 28px;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+section:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 0 20px rgba(59, 130, 246, 0.25),
+        0 0 40px rgba(121, 40, 202, 0.15);
+}
+
+/* =========================
+   TIPOGRAFIA
+========================= */
+
+section h2 {
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    margin-bottom: 18px;
+
+    font-size: 1.2rem;
+}
+
+section h3 {
+    margin-bottom: 8px;
+
+    font-size: 1.05rem;
+}
+
+section h4 {
+    margin-top: 14px;
+
+    margin-bottom: 6px;
+
+    color: #d1d5db;
+}
+
+section p,
+section li {
+    color: var(--muted);
+
+    margin-bottom: 10px;
+}
+
+strong {
+    color: white;
+}
+
+/* =========================
+   CONTATO
+========================= */
+
+.item-contato {
+    margin-bottom: 25px;
+}
+
+/* =========================
+   BOTÕES
+========================= */
+
+.botao-link,
+.botao-dois {
+    display: inline-block;
+
+    margin-top: 10px;
+
+    padding: 12px 18px;
+
+    border-radius: 12px;
+
+    text-decoration: none;
+
+    font-weight: 600;
+
+    color: white;
+
+    background: var(--gradient);
+
+    background-size: 300% 300%;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.botao-link:hover,
+.botao-dois:hover {
+    animation: brilho 3s linear infinite;
+
+    transform: scale(1.03);
+
+    box-shadow:
+        0 0 15px rgba(59, 130, 246, 0.35);
+}
+
+/* =========================
+   TAGS
+========================= */
+
+.tags {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 10px;
+
+    margin-top: 10px;
+}
+
+.tag {
+    padding: 10px 14px;
+
+    border-radius: 999px;
+
+    background: rgba(255, 255, 255, 0.05);
+
+    border: 1px solid rgba(255, 255, 255, 0.08);
+
+    font-size: 0.9rem;
+
+    transition: 0.3s ease;
+}
+
+.tag:hover {
+    transform: translateY(-2px);
+
+    background: rgba(255, 255, 255, 0.08);
+}
+
+/* =========================
+   CURSO
+========================= */
+
+.linha-curso {
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    margin: 12px 0;
+}
+
+.rotulo {
+    color: var(--muted);
+}
+
+/* =========================
+   LISTAS
+========================= */
+
+ul {
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 12px;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    text-align: center;
+
+    margin-top: 50px;
+
+    color: var(--muted);
+
+    font-size: 0.9rem;
+}
+
+/* =========================
+   ÍCONES
+========================= */
+
+i {
+    color: #60a5fa;
+}
+
+/* =========================
+   ANIMAÇÃO
+========================= */
+
+@keyframes brilho {
+
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* =========================
+   RESPONSIVIDADE
+========================= */
+
+@media (max-width: 1100px) {
+
+    .container-curriculo {
+        grid-template-columns: 1fr;
+    }
+
+    header h1 {
+        font-size: 2.2rem;
+    }
+}
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 20px 14px;
+    }
+
+    section {
+        padding: 22px;
+    }
+
+    header h1 {
+        font-size: 1.8rem;
+    }
+}
