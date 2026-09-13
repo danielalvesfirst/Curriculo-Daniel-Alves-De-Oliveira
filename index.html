@@ -1,329 +1,651 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+      name="description"
+      content="Daniel Alves — IT Student and Frontend Developer focused on web development, interface design and practical software solutions."
+    />
 
-    <title>Daniel Alves de Oliveira</title>
+    <title>Daniel Alves — IT Student & Frontend Developer</title>
 
-    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-</head>
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
 
-<body>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
 
-    <header>
-        <h1>Daniel Alves de Oliveira</h1>
-        <p class="subtitulo">Desenvolvedor Full-Stack</p>
+  <body>
+    <!-- =========================
+         NAVBAR
+    ========================== -->
+
+    <header class="navbar">
+      <a href="#" class="logo">
+        Daniel<span>.</span>
+      </a>
+
+      <nav>
+        <a href="#about">About</a>
+        <a href="#toolbox">Toolbox</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <a
+        href="https://github.com/danielalvesfirst"
+        class="nav-github"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        GitHub ↗
+      </a>
     </header>
 
-    <main class="container-curriculo">
+    <main>
+      <!-- =========================
+           HERO
+      ========================== -->
 
-        <!-- COLUNA PRINCIPAL -->
-        <div class="coluna-principal">
+      <section class="hero">
+        <div class="hero-content">
+          <div class="availability">
+            <span></span>
+            Available for opportunities
+          </div>
 
-            <!-- CONTATO -->
-            <section>
+          <p class="eyebrow">IT STUDENT / FRONTEND DEVELOPER</p>
 
-                <h2>
-                    <i class="fa-solid fa-address-card"></i>
-                    Contato
-                </h2>
+          <h1>
+            I build interfaces that make
+            <span>technology easier to use.</span>
+          </h1>
 
-                <div class="item-contato">
+          <p class="hero-description">
+            I'm Daniel Alves, an IT student focused on web development,
+            interface design and practical software solutions. Currently
+            studying Systems Analysis and Development at Universidade Católica
+            de Brasília.
+          </p>
 
-                    <h3>
-                        <i class="fa-solid fa-phone"></i>
-                        Telefone
-                    </h3>
+          <div class="hero-actions">
+            <a href="#projects" class="button button-primary">
+              View projects ↗
+            </a>
 
-                    <p><strong>+55 61 99448-4137</strong></p>
-
-                    <a href="https://wa.me/5561994484137"
-                        target="_blank"
-                        class="botao-link">
-                        Fale comigo no WhatsApp
-                    </a>
-
-                </div>
-
-                <div class="item-contato">
-
-                    <h3>
-                        <i class="fa-solid fa-envelope"></i>
-                        E-mail
-                    </h3>
-
-                    <p><strong>danielalvesticoo@gmail.com</strong></p>
-
-                    <a href="mailto:danielalvesticoo@gmail.com"
-                        class="botao-link">
-                        Enviar E-mail
-                    </a>
-
-                </div>
-
-                <div class="item-contato">
-
-                    <h3>
-                        <i class="fa-brands fa-linkedin"></i>
-                        LinkedIn
-                    </h3>
-
-                    <a href="https://www.linkedin.com/in/danielalvesanalise/"
-                        target="_blank"
-                        class="botao-link">
-                        Ver LinkedIn
-                    </a>
-
-                </div>
-
-                <div class="item-contato">
-
-                    <h3>
-                        <i class="fa-brands fa-github"></i>
-                        GitHub
-                    </h3>
-
-                    <a href="https://github.com/danielalvesfirst"
-                        target="_blank"
-                        class="botao-link">
-                        Ver GitHub
-                    </a>
-
-                </div>
-
-            </section>
-
-            <!-- FORMAÇÃO -->
-            <section>
-
-                <h2>
-                    <i class="fa-solid fa-graduation-cap"></i>
-                    Formação
-                </h2>
-
-                <h3>Universidade Católica de Brasília</h3>
-
-                <div class="linha-curso">
-
-                    <span class="rotulo">Curso:</span>
-
-                    <a href="https://ucb.catolica.edu.br/cursos/presencial/analise-desenvolvimento-sistemas"
-                        target="_blank"
-                        class="botao-dois">
-                        ADS
-                    </a>
-
-                </div>
-
-                <p class="nome-curso">
-                    Análise e Desenvolvimento de Sistemas
-                </p>
-
-                <p>2026 - 2028 • 5 semestres</p>
-
-            </section>
-
-            <!-- RESUMO -->
-            <section>
-
-                <h2>
-                    <i class="fa-solid fa-user"></i>
-                    Resumo
-                </h2>
-
-                <p>
-                    Estudante focado em desenvolvimento
-                    <strong>full-stack</strong>,
-                    com interesse em criar interfaces modernas,
-                    responsivas e intuitivas.
-                </p>
-
-                <p>
-                    Tenho facilidade para aprender novas ferramentas,
-                    resolver problemas e transformar ideias em
-                    aplicações funcionais.
-                </p>
-
-            </section>
-
+            <a href="#contact" class="button button-secondary">
+              Get in touch →
+            </a>
+          </div>
         </div>
 
-        <!-- COLUNA LATERAL -->
-        <div class="coluna-lateral">
+        <div class="hero-side">
+          <div class="profile-photo">
+            <a href="https://www.linkedin.com/in/danielalvesanalise/" target="_blank" rel="noopener">
+            <img
+              src="assets/IMGs/perfil.jpeg"
+              alt="Daniel Alves"
+            />
+          </div>
+          </a>
 
-            <!-- HABILIDADES -->
-            <section>
+          <div class="hero-side-info">
+            <span>01</span>
 
-                <h2>
-                    <i class="fa-solid fa-code"></i>
-                    Habilidades Técnicas
-                </h2>
+            <p>
+              IT STUDENT<br />
+              FRONTEND DEVELOPER
+            </p>
+          </div>
+        </div>
+      </section>
 
-                <div class="tags">
+      <!-- =========================
+           TECHNOLOGIES MARQUEE
+      ========================== -->
 
-                    <span class="tag">
-                        <i class="fa-brands fa-html5"></i>
-                        HTML5
-                    </span>
+      <div class="tech-marquee">
+        <div class="marquee-track">
+          <span>HTML</span>
+          <b>✦</b>
+          <span>CSS</span>
+          <b>✦</b>
+          <span>JAVASCRIPT</span>
+          <b>✦</b>
+          <span>C</span>
+          <b>✦</b>
+          <span>MYSQL</span>
+          <b>✦</b>
+          <span>GIT</span>
+          <b>✦</b>
+          <span>FIGMA</span>
+          <b>✦</b>
+          <span>LINUX</span>
+          <b>✦</b>
 
-                    <span class="tag">
-                        <i class="fa-brands fa-css3-alt"></i>
-                        CSS3
-                    </span>
+          <span>HTML</span>
+          <b>✦</b>
+          <span>CSS</span>
+          <b>✦</b>
+          <span>JAVASCRIPT</span>
+          <b>✦</b>
+          <span>C</span>
+          <b>✦</b>
+          <span>MYSQL</span>
+          <b>✦</b>
+          <span>GIT</span>
+          <b>✦</b>
+          <span>FIGMA</span>
+          <b>✦</b>
+          <span>LINUX</span>
+          <b>✦</b>
+        </div>
+      </div>
 
-                    <span class="tag">
-                        <i class="fa-brands fa-js"></i>
-                        JavaScript
-                    </span>
+      <!-- =========================
+           ABOUT
+      ========================== -->
 
-                    <span class="tag">Git</span>
-                    <span class="tag">GitHub</span>
-                    <span class="tag">VS Code</span>
-                    <span class="tag">Figma</span>
-
-                </div>
-
-            </section>
-
-            <!-- EXPERIÊNCIA -->
-            <section>
-
-                <h2>
-                    <i class="fa-solid fa-briefcase"></i>
-                    Experiência
-                </h2>
-
-                <h3>Projeto Acadêmico - Currículo Web</h3>
-
-                <p>2026</p>
-
-                <p>
-                    Desenvolvimento de uma página de currículo
-                    utilizando HTML5 e CSS3 com foco em design moderno,
-                    responsividade e experiência visual.
-                </p>
-
-            </section>
-
-            <!-- PROJETOS -->
-            <section>
-
-                <h2>
-                    <i class="fa-solid fa-code-branch"></i>
-                    Projetos
-                </h2>
-
-                <h3>Eleva</h3>
-
-                <h4>Objetivo:</h4>
-
-                <p>
-                    Conectar profissionais qualificados a oportunidades reais de trabalho por meio de uma plataforma baseada em confiança e inclusão produtiva.
-                </p>
-
-                <h4>O que eu fiz:</h4>
-
-                <p>
-                    Desenvolvemos uma plataforma web responsiva onde profissionais podem criar histórico profissional validado, receber avaliações e conquistar experiência prática através de serviços reais.
-                </p>
-
-                <h4>Diferenciais:</h4>
-
-                <p>
-                    Sistema de reputação verificável, validação por instituições parceiras, acompanhamento de serviços e foco em tecnologia social aplicada ao mercado de trabalho.
-                </p>
-
-
-                <h4>Tecnologias:</h4>
-
-                <p>HTML5, CSS3, JavaScript, Figma, Firebase e APIs de geolocalização</p>
-
-                <a href="https://github.com/danielalvesfirst"
-                    target="_blank"
-                    class="botao-dois">
-                    Ver Projeto
-                </a>
-
-            </section>
-
-            <!-- CURSOS -->
-            <section>
-
-                <h2>
-                    <i class="fa-solid fa-book"></i>
-                    Cursos Complementares
-                </h2>
-
-                <ul>
-
-                    <li>
-                        <strong>Inglês</strong> —
-                        CILCO (2018 - 2022, 480 horas)
-                    </li>
-
-                    <li>
-                        <strong>Design Thinking</strong> —
-                        TIC em Trilhas (30h)
-                    </li>
-
-                    <li>
-                        <strong>Figma</strong> —
-                        TIC em Trilhas (30h)
-                    </li>
-
-                    <li>
-                        <strong>Lean Canvas</strong> —
-                        TIC em Trilhas (30h)
-                    </li>
-
-                </ul>
-
-            </section>
-
+      <section class="section" id="about">
+        <div class="section-heading">
+          <span class="section-index">01</span>
+          <h2>About me</h2>
         </div>
 
-        <!-- TERCEIRA COLUNA -->
-        <div class="coluna-tres">
+        <div class="about-grid">
+          <div>
+            <p class="big-text">
+              I’m building my career around
+              <strong>technology, interfaces and problem solving.</strong>
+            </p>
+          </div>
 
-            <!-- IDIOMAS -->
-            <section>
+          <div class="about-text">
+            <p>
+              I'm currently studying Systems Analysis and Development at
+              Universidade Católica de Brasília, developing my foundation in
+              software development and computer science.
+            </p>
 
-                <h2>
-                    <i class="fa-solid fa-language"></i>
-                    Idiomas
-                </h2>
+            <p>
+              My main interests are frontend development, interface design and
+              creating practical digital experiences that are simple to
+              understand and use.
+            </p>
 
-                <div class="tags">
+            <p>
+              I enjoy learning by building projects, experimenting with
+              different technologies and turning ideas into working interfaces.
+            </p>
 
-                    <span class="tag">
-                        Inglês — Intermediário
-                    </span>
+            <div class="about-facts">
+              <div>
+                <span>Focus</span>
+                <strong>Web Development</strong>
+              </div>
 
-                    <span class="tag">
-                        Espanhol — Básico
-                    </span>
+              <div>
+                <span>Education</span>
+                <strong>ADS · UCB</strong>
+              </div>
 
-                </div>
+              <div>
+                <span>Based in</span>
+                <strong>Brazil</strong>
+              </div>
 
-            </section>
+              <div>
+                <span>Currently</span>
+                <strong>Learning & Building</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
+      <!-- =========================
+           TOOLBOX
+      ========================== -->
+
+      <section class="section" id="toolbox">
+        <div class="section-heading">
+          <span class="section-index">02</span>
+          <h2>Toolbox</h2>
         </div>
 
+        <p class="section-description">
+          Technologies and tools I use while studying, developing projects and
+          improving my skills.
+        </p>
+
+        <div class="toolbox-grid">
+          <article class="toolbox-card">
+            <span class="toolbox-number">01</span>
+
+            <h3>Languages</h3>
+
+            <ul>
+              <li>
+                <span>HTML</span>
+                <small>STRUCTURE</small>
+              </li>
+
+              <li>
+                <span>CSS</span>
+                <small>STYLING</small>
+              </li>
+
+              <li>
+                <span>JavaScript</span>
+                <small>LOGIC</small>
+              </li>
+
+              <li>
+                <span>C</span>
+                <small>FUNDAMENTALS</small>
+              </li>
+            </ul>
+          </article>
+
+          <article class="toolbox-card">
+            <span class="toolbox-number">02</span>
+
+            <h3>Frontend</h3>
+
+            <ul>
+              <li>
+                <span>Responsive Design</span>
+                <small>LAYOUT</small>
+              </li>
+
+              <li>
+                <span>UI Design</span>
+                <small>INTERFACES</small>
+              </li>
+
+              <li>
+                <span>DOM</span>
+                <small>JAVASCRIPT</small>
+              </li>
+
+              <li>
+                <span>Figma</span>
+                <small>PROTOTYPING</small>
+              </li>
+            </ul>
+          </article>
+
+          <article class="toolbox-card">
+            <span class="toolbox-number">03</span>
+
+            <h3>Backend / Data</h3>
+
+            <ul>
+              <li>
+                <span>MySQL</span>
+                <small>DATABASE</small>
+              </li>
+
+              <li>
+                <span>SQL</span>
+                <small>QUERIES</small>
+              </li>
+
+              <li>
+                <span>Data Modeling</span>
+                <small>STRUCTURE</small>
+              </li>
+
+              <li>
+                <span>Git</span>
+                <small>VERSION CONTROL</small>
+              </li>
+            </ul>
+          </article>
+
+          <article class="toolbox-card">
+            <span class="toolbox-number">04</span>
+
+            <h3>Tooling</h3>
+
+            <ul>
+              <li>
+                <span>VS Code</span>
+                <small>EDITOR</small>
+              </li>
+
+              <li>
+                <span>GitHub</span>
+                <small>REPOSITORIES</small>
+              </li>
+
+              <li>
+                <span>Linux</span>
+                <small>ENVIRONMENT</small>
+              </li>
+
+              <li>
+                <span>Figma</span>
+                <small>DESIGN</small>
+              </li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <!-- =========================
+           PROJECTS
+      ========================== -->
+
+      <section class="section" id="projects">
+        <div class="section-heading">
+          <span class="section-index">03</span>
+          <h2>Projects</h2>
+        </div>
+
+        <p class="section-description">
+          A selection of projects where I practice development, interfaces,
+          logic and problem solving.
+        </p>
+
+        <!-- PROJECT 01 -->
+
+        <article class="project">
+          <div class="project-image project-yellow">
+            <span>PROJECT / 01</span>
+
+            <div class="project-browser">
+              <div class="browser-top">
+                <i></i>
+                <i></i>
+                <i></i>
+              </div>
+
+              <div class="browser-content">
+                <div class="browser-line large"></div>
+                <div class="browser-line"></div>
+                <div class="browser-line short"></div>
+                <div class="browser-button"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-info">
+            <div class="project-meta">
+              <span>WEB APPLICATION</span>
+              <span>01 / 03</span>
+            </div>
+
+            <h3>Currency Converter</h3>
+
+            <p class="project-description">
+              A responsive currency conversion interface focused on clean
+              interaction, DOM manipulation and JavaScript logic.
+            </p>
+
+            <div class="project-details">
+              <div>
+                <span>Contribution</span>
+                <p>
+                  Interface development, JavaScript logic and responsive
+                  styling.
+                </p>
+              </div>
+
+              <div>
+                <span>Core Stack</span>
+                <p>HTML · CSS · JavaScript</p>
+              </div>
+            </div>
+
+            <div class="project-links">
+              <a
+                href="https://github.com/danielalvesfirst/currency-converter"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Code ↗
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- PROJECT 02 -->
+
+        <article class="project project-reverse">
+          <div class="project-image project-dark">
+            <span>PROJECT / 02</span>
+
+            <div class="code-preview">
+              <em>const</em> refund = {<br />
+              &nbsp;&nbsp;<strong>amount:</strong> <b>value</b>,<br />
+              &nbsp;&nbsp;<strong>category:</strong> <b>"food"</b>,<br />
+              &nbsp;&nbsp;<strong>status:</strong> <b>"approved"</b><br />
+              };
+            </div>
+          </div>
+
+          <div class="project-info">
+            <div class="project-meta">
+              <span>WEB APPLICATION</span>
+              <span>02 / 03</span>
+            </div>
+
+            <h3>Refund</h3>
+
+            <p class="project-description">
+              A web interface created to practice frontend development,
+              form-based interactions and JavaScript application logic.
+            </p>
+
+            <div class="project-details">
+              <div>
+                <span>Contribution</span>
+                <p>
+                  Frontend development, interface structure and application
+                  interactions.
+                </p>
+              </div>
+
+              <div>
+                <span>Core Stack</span>
+                <p>HTML · CSS · JavaScript</p>
+              </div>
+            </div>
+
+            <div class="project-links">
+              <a
+                href="https://github.com/danielalvesfirst/Refund"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Code ↗
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- PROJECT 03 -->
+
+        <article class="project">
+          <div class="project-image project-grid">
+            <span>PROJECT / 03</span>
+
+            <div class="grid-symbol">
+              UI
+            </div>
+          </div>
+
+          <div class="project-info">
+            <div class="project-meta">
+              <span>INTERFACE / UI</span>
+              <span>03 / 03</span>
+            </div>
+
+            <h3>Web Interface & UI Project</h3>
+
+            <p class="project-description">
+              A collection of interface experiments focused on visual
+              hierarchy, responsive layouts, component organization and
+              usability.
+            </p>
+
+            <div class="project-details">
+              <div>
+                <span>Contribution</span>
+                <p>
+                  Wireframes, interface structure, visual design and frontend
+                  implementation.
+                </p>
+              </div>
+
+              <div>
+                <span>Core Stack</span>
+                <p>HTML · CSS · Figma</p>
+              </div>
+            </div>
+
+            <div class="project-links">
+              <a
+                href="https://github.com/danielalvesfirst"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                GitHub ↗
+              </a>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <!-- =========================
+           EXPERIENCE & EDUCATION
+      ========================== -->
+
+      <section class="section">
+        <div class="section-heading">
+          <span class="section-index">04</span>
+          <h2>Experience</h2>
+        </div>
+
+        <div class="timeline">
+          <article class="timeline-item">
+            <div class="timeline-date">
+              2026 — PRESENT
+            </div>
+
+            <div class="timeline-content">
+              <span class="timeline-type">EDUCATION</span>
+
+              <h3>Systems Analysis and Development</h3>
+
+              <h4>Universidade Católica de Brasília</h4>
+
+              <p>
+                Bachelor's-level technology program focused on software
+                development, databases, systems analysis, programming and
+                technology fundamentals.
+              </p>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <div class="timeline-date">
+              2025 — PRESENT
+            </div>
+
+            <div class="timeline-content">
+              <span class="timeline-type">PERSONAL DEVELOPMENT</span>
+
+              <h3>Web Development</h3>
+
+              <h4>Independent Projects & Learning</h4>
+
+              <p>
+                Developing personal projects to strengthen my knowledge of
+                HTML, CSS, JavaScript, Git, databases, interface design and
+                software development practices.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
     </main>
 
+    <!-- =========================
+         CONTACT
+    ========================== -->
+
+    <section class="contact" id="contact">
+      <span class="contact-number">05 / CONTACT</span>
+
+      <div class="contact-content">
+        <p class="eyebrow">LET'S TALK</p>
+
+        <h2>Have a project in mind?</h2>
+
+        <p>
+          I'm always interested in learning, building new things and
+          connecting with people from the technology community.
+        </p>
+
+        <a
+          href="mailto:danielalvesticoo@gmail.com"
+          class="contact-email"
+        >
+          danielalvesticoo@gmail.com
+        </a>
+
+        <div class="contact-links">
+          <a
+            href="https://github.com/danielalvesfirst"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            GitHub ↗
+          </a>
+
+          <a
+            href="https://www.linkedin.com/in/danielalvesanalise/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            LinkedIn ↗
+          </a>
+
+          <a href="mailto:danielalvesticoo@gmail.com">
+            Email ↗
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
     <footer>
-        <p>&copy; <span id="ano-atual"></span> Daniel Alves de Oliveira. Todos os direitos reservados.</p>
+      <div class="footer-brand">
+        <strong>Daniel Alves<span>.</span></strong>
+        <p>Built with HTML, CSS & JavaScript.</p>
+      </div>
+
+      <img
+        class="footer-gif"
+        src="assets/GIFs/GIF_PixelArt__to_Github (3).gif"
+        alt="Daniel Alves pixel art signature"
+      />
+
+      <p class="footer-copy">
+        © 2026 Daniel Alves
+      </p>
     </footer>
-
-    <script>
-    document.getElementById('ano-atual').textContent = new Date().getFullYear();
-    </script>
-
-</body>
-
+  </body>
 </html>
